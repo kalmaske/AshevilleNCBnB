@@ -1,0 +1,58 @@
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <img src="./assets/images/airbnb.png" alt="logo" align="left" width="60px" height="60px">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/login">Log In</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br/>
+    <div class="container">
+        <div class="row">
+
+        <h1>Welcome to Asheville</h1>
+        <hr/>
+        <div class="col l12 m12 s12 xl12">
+            <!-- start carosel -->
+            <div class="carousel carousel-slider center">
+                <a id="img1" data-index="0" class="carousel-item" href="#one!">
+                    <img class="responsive-img" src="./assets/images/1.png">
+                </a>
+                <a id="img2" data-index="1" class="carousel-item" href="#two!">
+                    <img class="responsive-img" src="./assets/images/3.png">
+                </a>
+                <a id="img3" data-index="2" class="carousel-item" href="#three!">
+                    <img class="responsive-img" src="./assets/images/6.png">
+                </a>
+                <a id="img3" data-index="2" class="carousel-item" href="#three!">
+                    <img class="responsive-img" src="./assets/images/10.png">
+                </a>
+                <a id="img3" data-index="2" class="carousel-item" href="#three!">
+                    <img class="responsive-img" src="./assets/images/8.png">
+                </a>
+            </div>
+        </div>
+        <!-- end carosel -->
+    </div>
+    <br/>
+    <h2>Relax and unwind in the heart of Asheville</h2>
+        </div>
+        <div class="row">
+          
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+            $('.carousel').carousel({
+                dist: 0
+            });
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            });
+            window.setInterval(function () {
+                $('.carousel').carousel('next')
+            }, 5000);
+        });
+    </script>
+</body>

@@ -23,13 +23,6 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-//Serve static content from public
-
-//app.use(express.static(process.cwd() + './public'));
-
-
-
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({
   defaultLayout: 'main',

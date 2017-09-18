@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "Newchapter_2017",
-    "database": "asheville_db",
-    "host": "127.0.0.1",
+    "username": "h7z9eh8fqttsarkp",
+    "password": "sad6oskzzdq7yy05",
+    "database": "tpxvm0363wr17ij7",
+    "host": "wftuqljwesiffol6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "h7z9eh8fqttsarkp",
+    "password": "sad6oskzzdq7yy05",
+    "database": "tpxvm0363wr17ij7",
+    "host": "wftuqljwesiffol6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "h7z9eh8fqttsarkp",
+    "password": "sad6oskzzdq7yy05",
+    "database": "tpxvm0363wr17ij7",
+    "host": "wftuqljwesiffol6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }

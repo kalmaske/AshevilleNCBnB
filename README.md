@@ -36,8 +36,8 @@ Future Development..
 
       Processing payment from the user to the host
 
-  Add a review section so a user can review and leave  comments
+      Add a review section so a user can review and leave  comments
 
-  The client can book a place to stay and choose the check in and check out date.
+      The client can book a place to stay and choose the check in and check out date.
 
 

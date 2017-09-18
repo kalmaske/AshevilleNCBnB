@@ -6,7 +6,9 @@ module.exports = function (sequelize, DataTypes) {
 			validate: {
 				len: [5]
 			}
+			
 		},
+
 		neighbourhood: {
 			type: DataTypes.INTEGER,
 			allowNull: false,

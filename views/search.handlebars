@@ -1,13 +1,16 @@
-<body>
+<body>    
     <nav>
         <div class="nav-wrapper">
 
             <img src="./assets/images/airbnb.png" alt="logo" align="left" width="60px" height="60px">
-            <span id="welcome">Welcome {{titleizeName user.name}}</span>
+            <span id="welcome">Welcome {{user.name}}</span>
 
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/search">Search Other Listings</a></li>
+                
+                <li><a href="/home">Home</a></li>
                 <li><a href="/logout">Log Out</a></li>
+                {{!--
+                <li><a href="/signup">Sign Up</a></li> --}}
             </ul>
         </div>
     </nav>
@@ -47,57 +50,18 @@
       <div class="col-md-12 blog-container">
       </div>
     </div>
-        <div class="row">
-            <form class="col s12" action="/home" method="POST">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input id="zip_code" name="neighbourhood" type="text" class="validate">
-                        <label for="zip_code">Zip Code</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="description" name="name" type="text" class="validate">
-                        <label for="description">Description</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6" id="roomType">
-                        <select name="room_type">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="Entire Home/Apt">Entire Home/Apt</option>
-                        <option value="Private room">Private Room</option>
-                        <option value="Shared room">Shared Room</option>
-                    </select>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="price" type="text" name="price" class="validate">
-                        <label for="price">Price</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input id="min_night" type="text" name="minimum_nights" class="validate">
-                        <label for="min_nights">Minimum Night Stay</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="availability" type="text" name="availability_365" class="validate">
-                        <label for="availability">Availability</label>
-                    </div>
-                </div>
+                <p>Search our database for your perfect vacation to Asheville</p>
                 <button class="btn waves-effect" type="submit" name="action" id="submit">Submit</button>
             </form>
+
+
 <div>
+
+
             <ul>
-  {{#each listings}}
+  {{#each asheville_data}}
   	<li>
-  	   <p>ID: {{this.id}}</p>
-       <p>Name: {{this.name}}</p>
-			 <p>Neighbourhood: {{this.neighbourhood}}</p>
-			 <p>Price: {{this.price}}</p>
-			 <p>Room Type: {{this.room_type}}</p>
-			 <p>Minimum Nights: {{this.minimum_nights}}</p>
-			 <p>Availability: {{this.availability_365}}</p>
+
   	</li>
         <hr/>
   {{/each}}
@@ -144,7 +108,7 @@
             });
             window.setInterval(function () {
                 $('.carousel').carousel('next')
-            }, 5000);
+            }, 3000);
         });
     </script>
 </body>
